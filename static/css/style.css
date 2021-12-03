@@ -30,6 +30,42 @@
 
 /*------------end navbar----------*/
 
+/*------------beginning footer----------*/
+.footer-custom {
+    background-color: #111111;
+    font-family: 'Bebas Neue', cursive;
+    padding: 7em 0;
+}
+.footer-custom .menu a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.menu a:hover {
+    color: #111111;
+    background-color: #ffffff;
+  }
+
+.footer-custom li {
+    list-style: none;
+}
+.footer-custom a {
+    text-decoration: none;
+    color: #0a7557;
+}
+.social-links i:hover{
+    color: #ffffff
+}
+.social-links p, .copyright {
+    color:#ffffff;
+}
+/*------------end footer----------*/
+
+#test {
+    height: 500px;
+}
+
 /*------------mobile responsivity----------*/
   @media screen and (max-width: 768px) {
     .nav-link {
