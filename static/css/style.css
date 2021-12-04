@@ -62,13 +62,44 @@
 }
 /*------------end footer----------*/
 
+/*------------HOME/INDEX TEMPLATE----------*/
+/*------------beginning hero section----------*/
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+    font-family: 'Bebas Neue', cursive;
+}
+.carousel-caption h1 {
+    font-size: 6vw;
+}
+.carousel-caption h3 {
+    font-size: 3vw;
+}
+.hero-btn {
+    background-color: #0a7557;
+    color:#111111
+}
+
+.hero-btn:hover {
+    color: #0a7557;
+    background-color:#111111;
+}
+/*------------end hero section----------*/
+
 #test {
-    height: 500px;
+    height:600px;
 }
 
 /*------------mobile responsivity----------*/
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .nav-link {
         font-size: 20px;
     }
   }
+
+@media screen and (max-width: 425px) {
+    .carousel-caption h3 {
+        font-size: 15px;
+    }
+}

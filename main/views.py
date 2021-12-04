@@ -4,4 +4,7 @@ from django.views import View
 
 def get_base(request):
     return render(request, 'base.html')
+
+def get_home(request):
+    return render(request, 'index.html')
     
