@@ -1,8 +1,10 @@
 {% extends "base.html" %} 
 
 {% block content %}
-<!--Carousel Wrapper-->
-<div id="carousel-hero" class="carousel slide carousel-fade" data-ride="carousel">
+<!--Hero Section-->
+<section>
+  <!--Carousel Wrapper-->
+  <div id="carousel-hero" class="carousel slide carousel-fade" data-ride="carousel">
     <!--Indicators-->
     <ol class="carousel-indicators">
       <li data-target="#carousel-hero" data-slide-to="0" class="active"></li>
@@ -15,7 +17,6 @@
         <div class="view">
           <img class="d-block w-100" src="https://res.cloudinary.com/arthurvg/image/upload/v1638584754/jakub-dziubak-iOHJKJqO6E0-unsplash_vxmtc8.jpg"
             alt="First slide">
-          <div class="mask rgba-black-light"></div>
         </div>
         <div class="carousel-caption">
           <h3 class="text-uppercase">Welcome to Ask Japanese</h3>
@@ -33,13 +34,12 @@
         <div class="view">
           <img class="d-block w-100" src="https://res.cloudinary.com/arthurvg/image/upload/v1638584754/jakub-dziubak-iOHJKJqO6E0-unsplash_vxmtc8.jpg"
             alt="Second slide">
-          <div class="mask rgba-black-strong"></div>
         </div>
         <div class="carousel-caption">
           <h3 class="h3">Here we have all you wish from Japanese cuisine</h3>
           <div class="row justify-content-center">
               <div class="col">
-                <button type="button" class="btn hero-btn">Check our menu!</button>
+                <button type="button" class="btn hero-btn">Check our menu</button>
               </div>
           </div> 
         </div>
@@ -57,4 +57,64 @@
     <!--/.Controls-->
   </div>
   <!--/.Carousel Wrapper-->
+</section>
+<!--/.Hero Section-->
+
+<!--Details Section-->
+<section>
+  <div class="container">
+    <div class="row justify-content-around mb-5 details-row">
+      <div class="col-12 col-lg-4 d-none d-md-block details-img">
+        <img src="https://res.cloudinary.com/arthurvg/image/upload/v1638818644/where_are_we_xjjwp6.jpg" class="img-fluid" alt="">
+      </div>
+      <div class="col-12 col-md-4 address">
+        <ul>
+        <h2>Where we are</h2>
+        <li>Cheltenham</li>
+        <li>Montpellier Street</li>
+        <li>205</li>
+        <li>GL51 1DS</li>
+        <li>01242 999 999</li>
+        <li><button type="button" class="btn address-btn">Contact Us</button></li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-4 working-hours">
+        <h4 class="text-center">Our working hours</h4>
+        <table class="table">
+          <tbody>
+            <tr>
+              <th scope="row">Monday</th>
+              <td>11:30 - 22:30</td>
+            </tr>
+            <tr>
+              <th scope="row">Tuesday</th>
+              <td>11:30 - 22:30</td>
+            </tr>
+            <tr>
+              <th scope="row">Wednesday</th>
+              <td>11:30 - 22:30</td>
+            </tr>
+            <tr>
+              <th scope="row">Thursday</th>
+              <td>11:30 - 22:30</td>
+            </tr>
+            <tr>
+              <th scope="row">Friday</th>
+              <td>11:30 - 22:30</td>
+            </tr>
+            <tr>
+              <th scope="row">Saturday</th>
+              <td>11:30 - 22:30</td>
+            </tr>
+            <tr>
+              <th scope="row">Friday</th>
+              <td>11:30 - 22:30</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/.Details Section-->
 {%endblock%}

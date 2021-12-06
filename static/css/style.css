@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+body {
+    font-family:'Bebas Neue', cursive;
+}
+
 /*------------beginning navbar----------*/
 
 .navbar-custom {
@@ -87,14 +91,70 @@
 }
 /*------------end hero section----------*/
 
-#test {
-    height:600px;
+/*------------ beginning informations section----------*/
+.details-row {
+    margin-top: 48px;
 }
+.details-img{
+    text-align: center;
+}
+.address p{
+    margin:0;
+}
+.address li {
+    margin:0;
+    list-style-type: none;
+}
+.address h2 {
+    font-size: 3vw;
+}
+.address-btn {
+    background-color: #0a7557;
+    color:#111111;
+    margin-top: 2vw;
+}
+.address-btn:hover {
+    color: #0a7557;
+    background-color:#111111;
+}
+.address h2,
+.working-hours h4 {
+    color: #0a7557
+}
+.working-hours {
+    border-style: double;
+    padding: 2vw;
+    max-width: 300px;
+
+}
+.working-hours li {
+    list-style-type: none;
+    margin-top: 3px;
+}
+.working-hours u {
+    text-align: center;
+}
+/*------------end informations section----------*/
 
 /*------------mobile responsivity----------*/
 @media screen and (max-width: 768px) {
     .nav-link {
         font-size: 20px;
+    }
+    .details-row {
+        align-items: center;
+        margin-top: 0;
+    }
+    .address, 
+    .working-hours,
+    .details-img {
+        margin-top: 48px;
+}
+    .address{
+        font-size: x-large;
+    }
+    .address h2{
+        font-size: 50px;
     }
   }
 
