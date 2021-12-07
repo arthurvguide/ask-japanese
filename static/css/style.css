@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 body {
     font-family:'Bebas Neue', cursive;
@@ -136,7 +137,14 @@ body {
 }
 /*------------end informations section----------*/
 
+.about-us-section p {
+    font-family: 'Roboto', sans-serif;
+}
+.about-us-section h2 {
+    font-size: 3vw;
+}
 /*------------mobile responsivity----------*/
+
 @media screen and (max-width: 768px) {
     .nav-link {
         font-size: 20px;
@@ -153,7 +161,8 @@ body {
     .address{
         font-size: x-large;
     }
-    .address h2{
+    .address h2,
+    .about-us-section h2{
         font-size: 50px;
     }
   }
