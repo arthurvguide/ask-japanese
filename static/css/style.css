@@ -76,7 +76,7 @@ body {
     font-family: 'Bebas Neue', cursive;
 }
 .carousel-caption h1 {
-    font-size: 6vw;
+    font-size: 5.5vw;
 }
 .carousel-caption h3 {
     font-size: 3vw;
@@ -137,12 +137,58 @@ body {
 }
 /*------------end informations section----------*/
 
+/*------------ beginning about us section----------*/
 .about-us-section p {
     font-family: 'Roboto', sans-serif;
 }
 .about-us-section h2 {
     font-size: 3vw;
 }
+/*------------end about us section----------*/
+
+/*------------ beginning Explore menu section----------*/
+.explore-menu-section h4{
+    color:#0a7557;
+}
+.explore-menu-section h2{
+    font-size: 60px;
+}
+.card p{
+    font-family: 'Roboto', sans-serif;
+    color:#ffffff;
+    background-color: #111111;
+    opacity: 0.8;
+}
+.card{
+    width:400px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+.card:hover img {
+    transform: scale(1.1);
+}
+.card-title {
+    margin-top: 5px;
+}
+.card-img-top {
+   height: 270px;
+   max-width:400px;
+   transition: all 0.3s;
+   transform: scale(1);
+   opacity: 0.9;
+}
+.btn-explore-menu {
+    background-color: #0a7557;
+    color:#111111;
+    margin-top: 2vw;
+}
+.btn-explore-menu:hover {
+    color: #0a7557;
+    background-color:#111111;
+}
+
+/*------------ end Explore menu section----------*/
 /*------------mobile responsivity----------*/
 
 @media screen and (max-width: 768px) {
@@ -170,5 +216,8 @@ body {
 @media screen and (max-width: 425px) {
     .carousel-caption h3 {
         font-size: 15px;
+    }
+    .card {
+        margin-bottom: 15px;
     }
 }
