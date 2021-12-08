@@ -147,14 +147,15 @@ body {
 /*------------end about us section----------*/
 
 /*------------ beginning Explore menu section----------*/
-.explore-menu-section h4{
-    color:#0a7557;
+.explore-menu-section h4,
+.explore-menu-section span{
+    color:#f58902;
 }
+
 .explore-menu-section h2{
     font-size: 60px;
 }
 .card p{
-    font-family: 'Roboto', sans-serif;
     color:#ffffff;
     background-color: #111111;
     opacity: 0.8;
@@ -179,9 +180,10 @@ body {
    opacity: 0.9;
 }
 .btn-explore-menu {
-    background-color: #0a7557;
+    background-color: #f58902;
     color:#111111;
     margin-top: 2vw;
+    opacity: 0.85;
 }
 .btn-explore-menu:hover {
     color: #0a7557;
@@ -189,6 +191,32 @@ body {
 }
 
 /*------------ end Explore menu section----------*/
+
+/*------------BEGINNING MENU PAGE----------*/
+/* The hero image */
+.hero-image {
+ 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/arthurvg/image/upload/v1638996832/humberto-chavez-i6o8MQwyp34-unsplash_cwdhvn.jpg");
+    height:400px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  .hero-text h1 {
+    font-size: 80px;
+  }
+/*------------END MENU PAGE----------*/
+
 /*------------mobile responsivity----------*/
 
 @media screen and (max-width: 768px) {
