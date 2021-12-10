@@ -1,11 +1,48 @@
 {% extends "base.html" %} 
 
 {% block content %}
-
-<div class="hero-image">
-  <div class="hero-text">
-    <h1>Menu</h1>
+<!--Hero Section-->
+<section>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Menu</h1>
+    </div>
   </div>
-</div>
+</section>
+<!--/.Hero Section-->
 
-{%endblock%}
+<!--Menu Section-->
+<section>
+  <div class="row">
+    <div class="col">
+      <ul>
+        <li class="sushi-sashimi">Sushi & Sashimi</li>
+        <li class="rice-nodles">Rice & Nodles</li>
+        <li class="salads">Salads</li>
+        <li class="drinks">Drinks</li>
+        <li class="desserts">Desserts</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col d-block sushi-sashimi-view">
+      Estou mostrando cardapio de sushi
+    </div>
+    <div class="col d-none rice-nodles-view">
+      Estou mostrando cardapio de rice and nodles
+    </div>
+    <div class="col d-none salads-view">
+      Estou mostrando cardapio de salada
+    </div>
+    <div class="col d-none drinks-view">
+      Estou mostrando cardapio de drinks
+    </div>
+    <div class="col d-none desserts-view">
+      Estou mostrando cardapio de desserts
+    </div>
+  </div>
+</section>
+<!--/.Menu Section-->
+
+
+{% endblock %}
