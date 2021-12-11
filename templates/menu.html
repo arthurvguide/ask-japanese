@@ -12,35 +12,107 @@
 <!--/.Hero Section-->
 
 <!--Menu Section-->
-<section>
+<section class="menu-section">
   <div class="row">
     <div class="col">
-      <ul>
-        <li class="sushi-sashimi">Sushi & Sashimi</li>
-        <li class="rice-nodles">Rice & Nodles</li>
-        <li class="salads">Salads</li>
-        <li class="drinks">Drinks</li>
-        <li class="desserts">Desserts</li>
+      <h2 class="text-center mt-5">Check out our menu</h2>
+    </div>
+  </div>
+  <!--Menu Navigation-->
+  <div class="row text-center">
+    <div class="col-12 ">
+      <ul class="p-0 m-0">
+        <li class="sushi-sashimi d-inline mr-2 li-orange">Sushi & Sashimi</li>
+        <li class="rice-noodles d-inline mr-2 li-black">Rice & Noodles</li>
+        <li class="sides d-inline mr-2 li-orange">Sides</li>
+        <li class="drinks d-inline mr-2 li-black">Drinks</li>
+        <li class="desserts d-inline mr-2 li-orange">Desserts</li>
       </ul>
     </div>
   </div>
-  <div class="row">
-    <div class="col d-block sushi-sashimi-view">
-      Estou mostrando cardapio de sushi
+  <!--./Menu Navigation-->
+  <!--Sushi Sashimi View-->
+  <div class="row justify-content-center text-center mt-5 p-3 d-flex sushi-sashimi-view">
+    <div class="col-12 col-md-6 col-lg-4">
+    <img src="https://res.cloudinary.com/arthurvg/image/upload/v1639176449/menu-sushi-1_epp8oa.jpg" alt="nigiri moriwase" class="img-fluid">
+    <h3>nigiri moriwase <span class="item-price">£12.50</span></h3>
+    <p>Assorted nigiri sushi with sushi roll, served with clear soup</p>
     </div>
-    <div class="col d-none rice-nodles-view">
-      Estou mostrando cardapio de rice and nodles
+    <div class="col-12 col-md-6 col-lg-4">
+      <img src="https://res.cloudinary.com/arthurvg/image/upload/v1639178987/menu-item-2_iybsma.jpg" alt="kaiso seweed" class="img-fluid">
+      <h3>kaiso seaweed <span class="item-price">£9.50</span></h3>
+      <p>Marinated mixed seaweed, edamame & carrot in a su-miso dressing</p>
     </div>
-    <div class="col d-none salads-view">
-      Estou mostrando cardapio de salada
+    <div class="col-12 col-md-6 col-lg-4">
+      <img src="https://res.cloudinary.com/arthurvg/image/upload/v1639179556/menu-item-3_pwhnpz.jpg" alt="dragon roll" class="img-fluid">
+      <h3>dragon roll <span class="item-price">£8.00</span></h3>
+      <p>California roll topped with fresh salmon, shichimi powder & spring</p>
     </div>
-    <div class="col d-none drinks-view">
-      Estou mostrando cardapio de drinks
+    <div class="col-12 col-md-6 col-lg-4">
+      <img src="https://res.cloudinary.com/arthurvg/image/upload/v1639179788/menu-item-4_dgsejm.jpg" alt="salmon ponzu" class="img-fluid">
+      <h3>salmon ponzu <span class="item-price">£9.00</span></h3>
+      <p>Thinly sliced salmon, topped with salsa & a zingy ponzu dressing</p>
     </div>
-    <div class="col d-none desserts-view">
-      Estou mostrando cardapio de desserts
+    <div class="col-12 col-md-6 col-lg-4">
+      <img src="https://res.cloudinary.com/arthurvg/image/upload/v1639180170/menu-item-5_mbfy8v.jpg" alt="sushi avocado" class="img-fluid">
+      <h3>tuna & avocado tartare <span class="item-price">£10.50</span></h3>
+      <p>Premium yellowfin tuna with diced & a ponzu sauce, topped with crispy shallots</p>
     </div>
   </div>
+  <!--./Sushi Sashimi View-->
+
+  <!--Rice Noodles View-->
+  <div class="row justify-content-center text-center mt-5 p-3 d-none rice-noodles-view">
+    <div class="col-12 col-md-6 col-lg-4">
+      <img src="https://res.cloudinary.com/arthurvg/image/upload/v1639182855/menu-item-6_quw11x.jpg" alt="karen burosu ramen" class="img-fluid">
+      <h3>kare burosu ramen <span class="item-price">£6.50</span></h3>
+      <p>Fresh yakisoba noodles stir-fried in a tangy sauce served with crunchy vegetables</p>
+      </div>
+    <div class="col-12 col-md-6 col-lg-4">
+      <img src="https://res.cloudinary.com/arthurvg/image/upload/v1639182855/menu-item-8_exkkch.jpg" alt="yakisoba shrimp" class="img-fluid">
+      <h3>miso-glazed shrimp <span class="item-price">£7.50</span></h3>
+      <p>shrimp. spring onion. beansprouts. coriander. fresh lime. spicy chicken broth</p>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+      <img src="https://res.cloudinary.com/arthurvg/image/upload/v1639182855/menu-item-7_gyn2sc.jpg" alt="chicken ramen" class="img-fluid">
+      <h3>chilli chicken ramen <span class="item-price">£7.50</span></h3>
+      <p>chicken. red + spring onion. beansprouts. coriander. fresh lime. spicy chicken broth</p>
+    </div>
+  </div>
+  <!--./Rice Noodles View-->
+
+  <!--Sides View-->
+  <div class="row justify-content-center text-center mt-5 p-3 d-none sides-view">
+    <div class="col-12 col-md-6 col-lg-4">
+      <img src="https://res.cloudinary.com/arthurvg/image/upload/v1639184668/menu-item-9_hnimbv.jpg" alt="yakitori" class="img-fluid">
+      <h3>chicken yakitori <span class="item-price">£4.50</span></h3>
+      <p>marinated chicken skewers. spicy teriyaki sauce. shichimi. spring onion</p>
+      </div>
+    <div class="col-12 col-md-6 col-lg-4">
+      <img src="https://res.cloudinary.com/arthurvg/image/upload/v1639186442/drica-pinotti-wbFtlJIYPNk-unsplash_s5lc21.jpg" alt="pork ribs" class="img-fluid">
+      <h3>sticky ribs <span class="item-price">£4.50</span></h3>
+      <p>mushroom +  ribs. sweet + spicy sticky sauce. sesame seeds. spring onion</p>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+      <img src="https://res.cloudinary.com/arthurvg/image/upload/v1639186037/dilara-yilmaz-qqThVHqcpgA-unsplash_l17l0v.jpg" alt="fried greens" class="img-fluid">
+      <h3>fried greens <span class="item-price">£4.25</span></h3>
+      <p>tenderstem broccoli. bok choi. garlic + soy sauce</p>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+      <img src="https://res.cloudinary.com/arthurvg/image/upload/v1639186271/kyle-head-PW8K-W-Kni0-unsplash_1_f1wk4j.jpg" alt="salmon salad" class="img-fluid">
+      <h3>Salmon Salad<span class="item-price">£4.25</span></h3>
+      <p>sakmon. letuce. garlic + soy sauce</p>
+    </div>
+  </div>
+  <!--./Sides View-->
+  
+    <div class="col-12 col-md-4 d-none drinks-view">
+      Estou mostrando cardapio de drinks
+    </div>
+    <div class="col-12 col-md-4 d-none desserts-view">
+      Estou mostrando cardapio de desserts
+    </div>
+  
 </section>
 <!--/.Menu Section-->
 

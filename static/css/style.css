@@ -212,9 +212,25 @@ body {
     transform: translate(-50%, -50%);
     color: white;
   }
-  .hero-text h1 {
+.hero-text h1 {
     font-size: 80px;
   }
+
+.li-orange{
+    color:#f58902;
+  }
+.li-orange:hover{
+    background-color: #111111;
+}
+.li-black:hover{
+    background-color: #f58902;
+}
+.item-price {
+    color:#f58902;
+}
+.item-weight{
+    color:#0a7557;
+}
 /*------------END MENU PAGE----------*/
 
 /*------------mobile responsivity----------*/

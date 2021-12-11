@@ -7,8 +7,8 @@ const sushiSashimi = document.getElementsByClassName("sushi-sashimi")[0];
 const sushiSashimiView = document.getElementsByClassName("sushi-sashimi-view")[0];
 
 // Getting rice and nodles elements
-const riceNodles = document.getElementsByClassName("rice-nodles")[0];
-const riceNodlesView = document.getElementsByClassName("rice-nodles-view")[0];
+const riceNoodles = document.getElementsByClassName("rice-noodles")[0];
+const riceNoodlesView = document.getElementsByClassName("rice-noodles-view")[0];
 
 // Getting drinks elements
 const drinks = document.getElementsByClassName("drinks")[0];
@@ -19,23 +19,23 @@ const desserts = document.getElementsByClassName("desserts")[0];
 const dessertsView = document.getElementsByClassName("desserts-view")[0]
 
 // Getting salads elements
-const salads = document.getElementsByClassName("salads")[0];
-const saladsView = document.getElementsByClassName("salads-view")[0];
+const sides = document.getElementsByClassName("sides")[0];
+const sidesView = document.getElementsByClassName("sides-view")[0];
 
 /* Second step create events listener
 once one menu class is selected, all the others will be undisplayed */
 
 // If salads is selected
-salads.addEventListener("click", () => {
-    if (saladsView.classList.contains("d-block") == false){
-        saladsView.classList.add("d-block");
+sides.addEventListener("click", () => {
+    if (sidesView.classList.contains("d-flex") == false){
+        sidesView.classList.add("d-flex");
     };
 
-    let allViews = [dessertsView, sushiSashimiView, riceNodlesView, drinksView];
+    let allViews = [dessertsView, sushiSashimiView, riceNoodlesView, drinksView];
 
      for(let value of allViews) {
-        if (value.classList.contains("d-block")){
-            value.classList.remove("d-block");
+        if (value.classList.contains("d-flex")){
+            value.classList.remove("d-flex");
             value.classList.add("d-none");
         } 
       }
@@ -43,31 +43,31 @@ salads.addEventListener("click", () => {
 
 // If sushiSashimi is selected
 sushiSashimi.addEventListener("click", () => {
-    if (sushiSashimiView.classList.contains("d-block") == false){
-        sushiSashimiView.classList.add("d-block");
+    if (sushiSashimiView.classList.contains("d-flex") == false){
+        sushiSashimiView.classList.add("d-flex");
     };
 
-    let allViews = [dessertsView, saladsView, riceNodlesView, drinksView];
+    let allViews = [dessertsView, sidesView, riceNoodlesView, drinksView];
 
      for(let value of allViews) {
-        if (value.classList.contains("d-block")){
-            value.classList.remove("d-block");
+        if (value.classList.contains("d-flex")){
+            value.classList.remove("d-flex");
             value.classList.add("d-none");
         } 
       };
 })
 
 // If riceNodles is selected
-riceNodles.addEventListener("click", () => {
-    if (riceNodlesView.classList.contains("d-block") == false){
-        riceNodlesView.classList.add("d-block");
+riceNoodles.addEventListener("click", () => {
+    if (riceNoodlesView.classList.contains("d-flex") == false){
+        riceNoodlesView.classList.add("d-flex");
     };
     
-    let allViews = [dessertsView, saladsView, sushiSashimiView, drinksView];
+    let allViews = [dessertsView, sidesView, sushiSashimiView, drinksView];
 
      for(let value of allViews) {
-        if (value.classList.contains("d-block")){
-            value.classList.remove("d-block");
+        if (value.classList.contains("d-flex")){
+            value.classList.remove("d-flex");
             value.classList.add("d-none");
         } 
       };
@@ -75,15 +75,15 @@ riceNodles.addEventListener("click", () => {
 
 // If drinks is selected
 drinks.addEventListener("click", () => {
-    if (drinksView.classList.contains("d-block") == false){
-        drinksView.classList.add("d-block");
+    if (drinksView.classList.contains("d-flex") == false){
+        drinksView.classList.add("d-flex");
     };
     
-    let allViews = [dessertsView, saladsView, sushiSashimiView, riceNodlesView];
+    let allViews = [dessertsView, sidesView, sushiSashimiView, riceNoodlesView];
 
      for(let value of allViews) {
-        if (value.classList.contains("d-block")){
-            value.classList.remove("d-block");
+        if (value.classList.contains("d-flex")){
+            value.classList.remove("d-flex");
             value.classList.add("d-none");
         }
       };
@@ -91,15 +91,15 @@ drinks.addEventListener("click", () => {
 
 // If desserts is selected
 desserts.addEventListener("click", () => {
-    if (dessertsView.classList.contains("d-block") == false){
-        dessertsView.classList.add("d-block");
+    if (dessertsView.classList.contains("d-flex") == false){
+        dessertsView.classList.add("d-flex");
     };
     
-    let allViews = [saladsView, sushiSashimiView, drinksView, riceNodlesView];
+    let allViews = [sidesView, sushiSashimiView, drinksView, riceNoodlesView];
 
      for(let value of allViews) {
-        if (value.classList.contains("d-block")){
-            value.classList.remove("d-block");
+        if (value.classList.contains("d-flex")){
+            value.classList.remove("d-flex");
             value.classList.add("d-none");
         }
       };
