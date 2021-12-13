@@ -221,6 +221,7 @@ body {
   }
 .li-orange:hover{
     background-color: #111111;
+    color: #0a7557;
 }
 .li-black:hover{
     background-color: #f58902;
