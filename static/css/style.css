@@ -192,11 +192,9 @@ body {
 
 /*------------ end Explore menu section----------*/
 
-/*------------BEGINNING MENU PAGE----------*/
-/* The hero image */
-.hero-image {
- 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/arthurvg/image/upload/v1638996832/humberto-chavez-i6o8MQwyp34-unsplash_cwdhvn.jpg");
+
+/* Beginning HERO SECTION used at Menu, Book and Contact Pages */
+.hero-img {
     height:400px;
     width: 100%;
     background-position: center;
@@ -215,7 +213,12 @@ body {
 .hero-text h1 {
     font-size: 80px;
   }
+/* End HERO SECTION used at Menu, Book and Contact Pages */
 
+/*------------BEGINNING MENU PAGE----------*/
+.hero-img-menu {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/arthurvg/image/upload/v1638996832/humberto-chavez-i6o8MQwyp34-unsplash_cwdhvn.jpg");
+  }
 .li-orange{
     color:#f58902;
   }
@@ -234,6 +237,12 @@ body {
 }
 /*------------END MENU PAGE----------*/
 
+/*------------BEGINNING BOOK PAGE----------*/
+.hero-img-book {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/arthurvg/image/upload/v1639448859/mahmoud-fawzy-YnVaHqgpPLA-unsplash_rt2get.jpg");
+  }
+
+/*------------END BOOK PAGE----------*/
 /*------------mobile responsivity----------*/
 
 @media screen and (max-width: 768px) {

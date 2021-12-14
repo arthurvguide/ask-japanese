@@ -11,7 +11,3 @@ class BookingAdmin(admin.ModelAdmin):
 
     list_display = ('full_name', 'party_size', 'booking_date_time_start','booking_date_time_end')
     search_fields = ['full_name', 'booking_date_time_start']
-
-
-
-
