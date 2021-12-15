@@ -8,6 +8,13 @@
         <h1>Book</h1>
       </div>
     </div>
-  </section>
+    <div class="mt-5">
+      <form method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Sign in</button>
+      </form>
+    </div>
+</section>
   <!--/.Hero Section-->
 {%endblock%}
