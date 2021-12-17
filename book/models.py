@@ -1,38 +1,38 @@
-from datetime import datetime
+from datetime import datetime, date
 from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
 from django.core.validators import MaxValueValidator, MinValueValidator
 
 
 TIME_CHOICES = (
-    (0, '11:00'),
-    (1, '11:30'),
-    (2, '12:00'),
-    (3, '12:30'),
-    (4, '13:00'),
-    (5, '13:30'),
-    (6, '14:00'),
-    (7, '14:30'),
-    (8, '15:00'),
-    (9, '15:30'),
-    (10, '16:00'),
-    (11, '16:30'),
-    (12, '17:00'),
-    (13, '17:30'),
-    (14, '18:00'),
-    (15, '18:30'),
-    (16, '19:00'),
-    (17, '19:30'),
-    (18, '20:00'),
-    (19, '20:30'),
-    (20, '21:00'),
-    (21, '21:30'), 
+    ('11:00', '11:00'),
+    ('11:30', '11:30'),
+    ('12:00', '12:00'),
+    ('12:30', '12:30'),
+    ('13:00', '13:00'),
+    ('13:30', '13:30'),
+    ('14:00', '14:00'),
+    ('14:30', '14:30'),
+    ('15:00', '15:00'),
+    ('15:30', '15:30'),
+    ('16:00', '16:00'),
+    ('16:30', '16:30'),
+    ('17:00', '17:00'),
+    ('17:30', '17:30'),
+    ('18:00', '18:00'),
+    ('18:30', '18:30'),
+    ('19:00', '19:00'),
+    ('19:30', '19:30'),
+    ('20:00', '20:00'),
+    ('20:30', '20:30'),
+    ('21:00', '21:00'),
+    ('21:30', '21:30'), 
 )
 
 
 class Table(models.Model):
     size = models.IntegerField(
-        default=1,
+        default=2,
         validators=[
             MaxValueValidator(8),
             MinValueValidator(1)
@@ -56,11 +56,17 @@ class Booking(models.Model):
             MinValueValidator(1)
         ]
      )
-    booking_date = models.DateField(default=datetime.now, blank=False)
+    booking_date = models.DateField(
+        default=datetime.now,
+        blank=False,
+        validators=[
+            MinValueValidator(date.today())
+        ])
+
     booking_time = models.CharField(default=TIME_CHOICES[21],
-        max_length=30, choices=TIME_CHOICES)
+                   max_length=30, choices=TIME_CHOICES)
     phone_number = PhoneNumberField(unique=True, null=False, blank=False)
-    
+
     class Meta:
         ordering = ["booking_date"]
 
