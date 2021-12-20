@@ -1,5 +1,5 @@
 {% extends "base.html" %} 
-
+{% load static %}
 {% block content %}
 <!--Hero Section-->
 <section>
@@ -12,9 +12,16 @@
       <form method="post">
         {% csrf_token %}
         {{ form }}
-        <button type="submit">Sign in</button>
+        
+        <button type="submit">Confirm Booking</button>
       </form>
     </div>
 </section>
   <!--/.Hero Section-->
 {%endblock%}
+
+{% block scripts %}
+
+<script src="{% static 'js/book.js' %}"></script>
+
+{% endblock %}

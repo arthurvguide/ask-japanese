@@ -1,5 +1,5 @@
 {% extends "base.html" %} 
-
+{% load static %}
 {% block content %}
 <!--Hero Section-->
 <section>
@@ -146,5 +146,11 @@
 </section>
 <!--/.Menu Section-->
 
+
+{% endblock %}
+
+{% block scripts %}
+
+<script src="{% static 'js/menu.js' %}"></script>
 
 {% endblock %}
