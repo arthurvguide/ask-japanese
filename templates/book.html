@@ -1,5 +1,10 @@
 {% extends "base.html" %} 
 {% load static %}
+
+{% block links  %}
+<link rel="stylesheet" href="{% static 'css/jquery.datetimepicker.min.css' %}">
+{% endblock %}
+
 {% block content %}
 <!--Hero Section-->
 <section>
@@ -22,6 +27,8 @@
 
 {% block scripts %}
 
+<script src="{% static 'js/jquery.datetimepicker.full.min.js' %}"></script>
 <script src="{% static 'js/book.js' %}"></script>
+
 
 {% endblock %}
