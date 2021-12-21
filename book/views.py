@@ -25,13 +25,19 @@ class BookingView(View):
         booking_form = BookingForm(data=request.POST)
         if booking_form.is_valid():
             booking = booking_form.save(commit=False)
-            required_size = booking.party_size 
-            required_start_time = booking.booking_date_start
 
+            #Getting input date to check if is there's table available
+            required_size = booking.party_size 
+            required_start_time = booking.booking_date_start 
             table = get_right_table_available(required_start_time, required_size)
-            booking.booking_date_end = required_start_time + delta
-            booking.table = table 
-            booking.save()
+
+            numbers_booked = avoid_double_booking(required_start_time)
+            if booking.phone_number not in numbers_booked:
+                #Passing booking end date to the Booking Model
+                booking.booking_date_end = required_start_time + delta
+                #Passing the table found to the Booking Model
+                booking.table = table 
+                booking.save()
         else :
             return render(
                 request,
@@ -52,7 +58,7 @@ def get_right_table_available(required_start_time, required_size):
     Each booking has 90 minutes.
     """
    
-    delta = timedelta(minutes=90)
+    delta = timedelta(minutes=90) # 90 min beacuse each bookins has 90min
     required_end_time = required_start_time + delta
 
     start_date = required_start_time
@@ -79,3 +85,32 @@ def get_right_table_available(required_start_time, required_size):
         return "No Table available"
     else:
         return tables[0]
+
+
+def avoid_double_booking(required_start_time):
+    """
+    This method returns all numbers of the bookings made at
+    the range of start and end time of the new booking.
+    This avoid of the same person make double booking.
+    """
+    delta = timedelta(minutes=90) # 90 min beacuse each bookins has 90min
+    required_end_time = required_start_time + delta
+
+    start_date = required_start_time
+    end_date = required_end_time
+
+    all_numbers_booked = []
+
+    # Get numbers which starts between the required booking time
+    numbers_booked = Booking.objects.filter(
+         booking_date_start__range=(start_date, end_date)).values('phone_number') 
+    all_numbers_booked_temp = [x['phone_number'] for x in numbers_booked]
+    all_numbers_booked = all_numbers_booked + all_numbers_booked_temp
+
+    # Get numbers which ends between the required booking time
+    numbers_booked = Booking.objects.filter(
+         booking_date_end__range=(start_date, end_date)).values('phone_number')
+    all_numbers_booked_temp = [x['phone_number'] for x in numbers_booked]
+    all_numbers_booked = all_numbers_booked + all_numbers_booked_temp
+
+    return all_numbers_booked
