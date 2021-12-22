@@ -20,47 +20,63 @@
 <section class="booking-section">
   <div class="row">
     <div class="col">
-      <h2 class="text-center mt-5">Complete your booking</h2>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <p class="text-center p-2">For bookings larger than 8 people, please call us</p> 
+      <h2 class="booking-h2 text-center mt-5">Complete your booking</h2>
     </div>
   </div>
 
+  <div class="row text-center msg-div">
+    <div class="col-12">
+    {% if messages %}
+      {% for message in messages %}
+        <div class="alert alert-{{ message.tags }} pr-3 pl-3">
+          {{ message }}
+        </div>   
+      {% endfor %}
+    {% endif %}
+  </div>
+  <div class="col-12"> 
+    {% if form.errors %}
+    {% for field in form %}
+        {% for error in field.errors %} 
+           <div class="alert alert-danger">
+                <strong>{{ error|escape }}</strong>
+           </div>
+        {% endfor %}
+    {% endfor %}
+   {% endif %} 
+  </div>
+  </div>
   <div class="row p-3">
     <div class="col d-flex justify-content-center">
-      <form class="booking-form" method="post">
+      <form class="booking-form mb-5" method="post">
         {% csrf_token %} 
         <div class="row p-2">
           <div class="col"> 
-            <h3>Full Name</h3>
+            <h5>Full Name</h5>
             {{ form.full_name}} 
           </div>
         </div>
         <div class="row p-2">
           <div class="col">
-            <h3>Group Size</h3>
+            <h5>Group Size</h5>
             {{ form.party_size}} 
           </div>
         </div>
         <div class="row p-2">
           <div class="col"> 
-            <h3>Booking Date</h3>
+            <h5>Booking Date</h5>
             {{ form.booking_date_start}}
           </div>
         </div>
         <div class="row p-2">
           <div class="col"> 
-            <h3>Contact Number</h3>
+            <h5>Contact Number</h5>
             {{ form.phone_number}}
           </div>
-        </div> 
+        </div>
         <button class="btn btn-booking" type="submit">Confirm Booking</button>
-      </form> 
-    </div>
-    
+      </form>   
+    </div> 
   </div>
 </section>
  <!--/.Book Section-->
