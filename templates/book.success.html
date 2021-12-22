@@ -1,0 +1,68 @@
+{% extends "base.html" %} 
+{% load static %}
+
+{% block links  %}
+<link rel="stylesheet" href="{% static 'css/jquery.datetimepicker.min.css' %}">
+{% endblock %}
+
+{% block content %}
+<!--Hero Section-->
+<section>
+    <div class="hero-img hero-img-book">
+      <div class="hero-text">
+        <h1>Book</h1>
+      </div>
+    </div>
+</section>
+ <!--/.Hero Section-->
+
+ <!--Book Success Section-->
+<section>
+  <div class="row">
+    <div class="col">
+      <h2 class="text-center booking-h2 mt-5 pl-2 pr-2">You have successfully booked</h2>
+    </div>
+  </div>
+
+  <div class="row text-center d-flex justify-content-center ml-3 mr-3 mt-3 mb-5">
+    <div class="col booking-details">
+      <h4>Your booking details</h4>
+      <p>Please save these informations</p>
+      <table class="table">
+        <tbody>
+          <tr>
+            <th scope="row">Name</th>
+            <td> {{ name }} </td>
+          </tr>
+          <tr>
+            <th scope="row">Group Size</th>
+            <td>{{ group }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Booking Date</th>
+            <td>{{ date }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Contact Number</th>
+            <td>{{ contact_number }}</td>
+          </tr>
+          <tr>
+            <th scope="row">BOOKING REFERENCE NUMBER</th>
+            <td>{{ id }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+</section>
+ <!--/.Book Success Section--> 
+{%endblock%}
+
+{% block scripts %}
+
+<script src="{% static 'js/jquery.datetimepicker.full.min.js' %}"></script>
+<script src="{% static 'js/book.js' %}"></script>
+
+
+{% endblock %}

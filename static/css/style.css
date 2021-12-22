@@ -237,6 +237,10 @@ body {
 }
 /*------------END MENU PAGE----------*/
 
+.booking-h2 {
+    font-size: 65px;
+    color:#f58902
+}
 /*------------BEGINNING BOOK PAGE----------*/
 .hero-img-book {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/arthurvg/image/upload/v1639448859/mahmoud-fawzy-YnVaHqgpPLA-unsplash_rt2get.jpg");
@@ -248,13 +252,11 @@ body {
     width: 300px;
     height: 35px;
 }
-.booking-section h2 {
-    color:#f58902
-}
+
 .btn-booking {
     background-color: #0a7557;
     color:#111111;
-    margin-top: 2vw;
+    margin-top: 1vw;
     margin-left: 95px;
 }
 .btn-booking:hover {
@@ -262,6 +264,24 @@ body {
     background-color:#111111;
 }
 /*------------END BOOK PAGE----------*/
+
+/*------------BEGINNING SUCCESS BOOK PAGE----------*/
+.booking-details {
+    border-style: double;
+    padding: 2vw;
+    max-width: 400px;
+}
+.booking-details p{
+    color:#0a7557
+}
+/*------------END SUCCESS BOOK PAGE----------*/
+
+/*------------BEGINNING CONTACT PAGE----------*/
+.hero-img-contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/arthurvg/image/upload/v1640113431/mahmoud-fawzy-sGPMqwj3N5M-unsplash_r9guqr.jpg");
+  }
+/*------------END CONTACT PAGE----------*/
+
 /*------------mobile responsivity----------*/
 
 @media screen and (max-width: 768px) {

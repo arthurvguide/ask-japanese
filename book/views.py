@@ -54,8 +54,20 @@ class BookingView(View):
             #Passing the table found to the Booking Model
             booking.table = table 
             booking.save()
-            
-   
+            return render(request, 'book.success.html', {
+                          'name': booking.full_name,
+                          'group': booking.party_size,
+                          'date': booking.booking_date_start,
+                          'contact_number': booking.phone_number,
+                          'id': booking.id
+            })
+
+        else:
+            return render(
+                    request,
+                    'book.html', {
+                    'form': booking_form})    
+
 
 def get_right_table_available(required_start_time, required_size):
     """
