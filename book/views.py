@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from datetime import datetime, date, timedelta, time
 from django.contrib import messages
 from django.views import View
-from .forms import BookingForm
+from .forms import BookingForm, CancelForm
 from .models import Booking, Table
 # Create your views here.
 
@@ -67,6 +67,18 @@ class BookingView(View):
                     request,
                     'book.html', {
                     'form': booking_form})    
+
+
+class CancelView(View):
+
+    def get(self, request, *args, **kwargs):
+
+        return render(
+            request,
+            'book.cancel.html', {
+                'form': CancelForm()
+            }
+        )
 
 
 def get_right_table_available(required_start_time, required_size):

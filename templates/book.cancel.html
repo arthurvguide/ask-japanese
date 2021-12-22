@@ -1,0 +1,81 @@
+{% extends "base.html" %} 
+{% load static %}
+
+{% block links  %}
+<link rel="stylesheet" href="{% static 'css/jquery.datetimepicker.min.css' %}">
+{% endblock %}
+
+{% block content %}
+<!--Hero Section-->
+<section>
+    <div class="hero-img hero-img-book">
+      <div class="hero-text">
+        <h1>Cancel</h1>
+      </div>
+    </div>
+</section>
+ <!--/.Hero Section-->
+
+ <!--Book Section-->
+<section class="booking-section">
+  <div class="row">
+    <div class="col">
+      <h2 class="booking-h2 text-center mt-5">inform your booking details</h2>
+    </div>
+  </div>
+
+  <div class="row text-center msg-div">
+    <div class="col-12">
+    {% if messages %}
+      {% for message in messages %}
+        <div class="alert alert-{{ message.tags }} pr-3 pl-3">
+          {{ message }}
+        </div>   
+      {% endfor %}
+    {% endif %}
+  </div>
+  <div class="col-12"> 
+    {% if form.errors %}
+    {% for field in form %}
+        {% for error in field.errors %} 
+           <div class="alert alert-danger">
+                <strong>{{ error|escape }}</strong>
+           </div>
+        {% endfor %}
+    {% endfor %}
+   {% endif %} 
+  </div>
+  </div>
+  <div class="row p-3">
+    <div class="col d-flex justify-content-center">
+      <form class="booking-form mb-5" method="post">
+        {% csrf_token %} 
+        <div class="row p-2">
+          <div class="col"> 
+            <h5>Full Name</h5>
+            {{ form.your_name }} 
+          </div>
+        </div>
+        <div class="row p-2">
+          <div class="col"> 
+            <h5>Booking Reference ID</h5>
+            {{ form.your_booking_id }}
+          </div>
+        </div>
+        <button class="btn btn-booking" type="submit">Cancel Booking</button>
+      </form>   
+    </div> 
+  </div>
+</section>
+ <!--/.Book Section-->
+    
+
+{%endblock%}
+
+{% block scripts %}
+
+<script src="{% static 'js/jquery.datetimepicker.full.min.js' %}"></script>
+<script src="{% static 'js/book.js' %}"></script>
+
+
+{% endblock %}
