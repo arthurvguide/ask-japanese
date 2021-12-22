@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from datetime import datetime, date, timedelta, time
+from django.contrib import messages
 from django.views import View
 from .forms import BookingForm
 from .models import Booking, Table
@@ -29,26 +30,32 @@ class BookingView(View):
             #Getting input date to check if is there's table available
             required_size = booking.party_size 
             required_start_time = booking.booking_date_start 
+            numbers_booked = avoid_double_booking(required_start_time)
             table = get_right_table_available(required_start_time, required_size)
 
-            numbers_booked = avoid_double_booking(required_start_time)
-            if booking.phone_number not in numbers_booked:
-                #Passing booking end date to the Booking Model
-                booking.booking_date_end = required_start_time + delta
-                #Passing the table found to the Booking Model
-                booking.table = table 
-                booking.save()
-        else :
-            return render(
-                request,
-                'book.html', {
-                    'form': booking_form
-                    
-                } 
-            )    
-        
-        return render(request, 'index.html')
+            #Explaining for user that there's no table available at the required time
+            if table == "No Table available":
+                messages.warning(request, 'Sorry, there is no table available at this time, please try another date')
+                return render(
+                    request,
+                    'book.html', {
+                    'form': booking_form})
 
+            #Explaining for user that they cant double book       
+            if booking.phone_number in numbers_booked:
+                messages.warning(request, 'You already has a booking at this time')
+                return render(
+                    request,
+                    'book.html', {
+                    'form': booking_form})
+
+            #Passing booking end date to the Booking Model
+            booking.booking_date_end = required_start_time + delta
+            #Passing the table found to the Booking Model
+            booking.table = table 
+            booking.save()
+            
+   
 
 def get_right_table_available(required_start_time, required_size):
     """
