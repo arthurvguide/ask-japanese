@@ -1,4 +1,6 @@
 from django.shortcuts import render, redirect
+from django.core.mail import send_mail
+from django.conf import settings
 from django.urls import reverse
 from datetime import datetime, date, timedelta, time
 from django.contrib import messages
@@ -55,13 +57,19 @@ class BookingView(View):
             # Passing the table found to the Booking Model
             booking.table = table 
             booking.save()
+            # Send an email to user save their booking details
+            message = email_message(booking.full_name, booking.booking_date_start,
+                        booking.id)
+            send_mail("Booking Confirmation", 
+              message, settings.EMAIL_HOST_USER, [booking.email], fail_silently=False) 
             return render(request, 'book.success.html', {
                           'name': booking.full_name,
                           'group': booking.party_size,
                           'date': booking.booking_date_start,
                           'contact_number': booking.phone_number,
+                          'email': booking.email,
                           'id': booking.id
-            })
+                })
 
         else:
             return render(
@@ -190,3 +198,14 @@ def get_booking(self, booking_id, name):
             full_name=name, id=booking_id)
     except Booking.DoesNotExist:
         return False
+
+def email_message(name, date, id):
+    message = f"""Hello {name}. We are looking forward to serving you.
+These are your booking details:
+Booking Date: {date},
+Booking Reference ID: {id}
+
+Best Wishes
+Ask Japanese Team"""
+
+    return message 

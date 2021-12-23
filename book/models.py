@@ -27,6 +27,7 @@ class Booking(models.Model):
         default=0,
         blank=False,
         )
+    email = models.EmailField(blank=False, default="your_email@email.com")
     phone_number = PhoneNumberField(null=False, blank=False)
 
     class Meta:
