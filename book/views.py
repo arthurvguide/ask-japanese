@@ -1,4 +1,5 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect
+from django.urls import reverse
 from datetime import datetime, date, timedelta, time
 from django.contrib import messages
 from django.views import View
@@ -27,13 +28,13 @@ class BookingView(View):
         if booking_form.is_valid():
             booking = booking_form.save(commit=False)
 
-            #Getting input date to check if is there's table available
+            # Getting input date to check if is there's table available
             required_size = booking.party_size 
             required_start_time = booking.booking_date_start 
             numbers_booked = avoid_double_booking(required_start_time)
             table = get_right_table_available(required_start_time, required_size)
 
-            #Explaining for user that there's no table available at the required time
+            # Explaining for user that there's no table available at the required time
             if table == "No Table available":
                 messages.warning(request, 'Sorry, there is no table available at this time, please try another date')
                 return render(
@@ -41,7 +42,7 @@ class BookingView(View):
                     'book.html', {
                     'form': booking_form})
 
-            #Explaining for user that they cant double book       
+            # Explaining for user that they cant double book       
             if booking.phone_number in numbers_booked:
                 messages.warning(request, 'You already has a booking at this time')
                 return render(
@@ -49,9 +50,9 @@ class BookingView(View):
                     'book.html', {
                     'form': booking_form})
 
-            #Passing booking end date to the Booking Model
+            # Passing booking end date to the Booking Model
             booking.booking_date_end = required_start_time + delta
-            #Passing the table found to the Booking Model
+            # Passing the table found to the Booking Model
             booking.table = table 
             booking.save()
             return render(request, 'book.success.html', {
@@ -79,6 +80,41 @@ class CancelView(View):
                 'form': CancelForm()
             }
         )
+    
+
+    def post(self, request, *args, **kwargs):
+
+        cancel_form = CancelForm(data=request.POST)
+
+        if cancel_form.is_valid():
+            name = cancel_form.cleaned_data.get('your_name')
+            booking_id = cancel_form.cleaned_data.get('your_booking_id')
+
+
+            find_booking = get_booking(self, booking_id, name)
+
+            if find_booking is not False:
+                return redirect ('cancel-confirm', id=find_booking.id)
+
+            else:
+                messages.warning(request, "We couldn't find your booking ")
+                return render(
+                    request,
+                    'book.cancel.html', {
+                        'form': CancelForm
+                    }
+                )
+
+
+def CancelConfirmView(request, id):
+
+	queryset = Booking.objects.get(id=id)
+	if request.method == 'POST':
+		queryset.delete()
+		return redirect('cancel')
+
+	return render(request, 'book.cancel.confirm.html')
+
 
 
 def get_right_table_available(required_start_time, required_size):
@@ -145,3 +181,12 @@ def avoid_double_booking(required_start_time):
     all_numbers_booked = all_numbers_booked + all_numbers_booked_temp
 
     return all_numbers_booked
+
+
+def get_booking(self, booking_id, name):
+
+    try:
+        return Booking.objects.get(
+            full_name=name, id=booking_id)
+    except Booking.DoesNotExist:
+        return False

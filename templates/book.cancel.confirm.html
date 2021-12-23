@@ -1,0 +1,46 @@
+{% extends "base.html" %} 
+{% load static %}
+
+
+{% block content %}
+<!--Hero Section-->
+<section>
+    <div class="hero-img hero-img-book">
+      <div class="hero-text">
+        <h1>Cancel</h1>
+      </div>
+    </div>
+</section>
+ <!--/.Hero Section-->
+
+ <!--Book Section-->
+<section class="booking-section">
+  <div class="row">
+    <div class="col">
+      <h2 class="booking-h2 text-center mt-5">Are you sure you want to cancel?</h2>
+    </div>
+  </div>
+
+  <div class="row p-3">
+    <div class="col d-flex justify-content-center">
+      <form class="booking-form mb-5" method="post">
+        {% csrf_token %}
+        {{ find_booking }}
+        <button class="btn btn-booking" type="yes">Yes</button>
+        <a class="btn btn-booking" href="">No</a> 
+      </form>   
+    </div> 
+  </div>
+</section>
+ <!--/.Book Section-->
+    
+
+{%endblock%}
+
+{% block scripts %}
+
+<script src="{% static 'js/jquery.datetimepicker.full.min.js' %}"></script>
+<script src="{% static 'js/book.js' %}"></script>
+
+
+{% endblock %}
