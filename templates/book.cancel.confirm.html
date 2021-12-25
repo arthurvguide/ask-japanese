@@ -26,8 +26,8 @@
       <form class="booking-form mb-5" method="post">
         {% csrf_token %}
         {{ find_booking }}
-        <button class="btn btn-booking" type="yes">Yes</button>
-        <a class="btn btn-booking" href="">No</a> 
+        <button class="btn btn-booking" type="submit">Yes</button>
+        <a class="btn btn-booking" href="{% url 'cancel' %}">No</a> 
       </form>   
     </div> 
   </div>

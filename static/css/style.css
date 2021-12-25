@@ -57,7 +57,7 @@ body {
 }
 .footer-custom a {
     text-decoration: none;
-    color: #0a7557;
+    color: #f58902;
 }
 .social-links i:hover{
     color: #ffffff
@@ -83,12 +83,12 @@ body {
 }
 .hero-btn {
     background-color: #0a7557;
-    color:#111111
+    color:#ffffff;
 }
 
 .hero-btn:hover {
     color: #0a7557;
-    background-color:#111111;
+    background-color:#ffffff;
 }
 /*------------end hero section----------*/
 
@@ -111,15 +111,15 @@ body {
 }
 .address-btn {
     background-color: #0a7557;
-    color:#111111;
+    color:#ffffff;
     margin-top: 2vw;
 }
 .address-btn:hover {
     color: #0a7557;
-    background-color:#111111;
+    background-color:#ffffff;
 }
 .address h2,
-.working-hours h4 {
+.working-hours h5 {
     color: #0a7557
 }
 .working-hours {
@@ -147,9 +147,12 @@ body {
 /*------------end about us section----------*/
 
 /*------------ beginning Explore menu section----------*/
-.explore-menu-section h4,
-.explore-menu-section span{
+.explore-menu-section h4 {
     color:#f58902;
+}
+
+.explore-menu-section span{
+    color:#0062cc;
 }
 
 .explore-menu-section h2{
@@ -173,7 +176,7 @@ body {
     margin-top: 5px;
 }
 .card-img-top {
-   height: 270px;
+   height: 267px;
    max-width:400px;
    transition: all 0.3s;
    transform: scale(1);
@@ -186,7 +189,7 @@ body {
     opacity: 0.85;
 }
 .btn-explore-menu:hover {
-    color: #0a7557;
+    color: #f58902;
     background-color:#111111;
 }
 
@@ -219,27 +222,26 @@ body {
 .hero-img-menu {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/arthurvg/image/upload/v1638996832/humberto-chavez-i6o8MQwyp34-unsplash_cwdhvn.jpg");
   }
-.li-orange{
-    color:#f58902;
-  }
-.li-orange:hover{
+.menu-section li {
+    color:#0062cc;
+}
+
+.menu-section li:hover{
     background-color: #111111;
-    color: #0a7557;
+    color: #ffffff;
 }
 .li-black:hover{
     background-color: #f58902;
 }
 .item-price {
-    color:#f58902;
+    color:#0062cc;
 }
-.item-weight{
-    color:#0a7557;
-}
+
 /*------------END MENU PAGE----------*/
 
 .booking-h2 {
     font-size: 65px;
-    color:#f58902
+    color:#0062cc
 }
 /*------------BEGINNING BOOK PAGE----------*/
 .hero-img-book {
@@ -255,13 +257,13 @@ body {
 
 .btn-booking {
     background-color: #0a7557;
-    color:#111111;
+    color:#ffffff;
     margin-top: 1vw;
     margin-left: 95px;
 }
 .btn-booking:hover {
     color: #0a7557;
-    background-color:#111111;
+    background-color:#ffffff;
 }
 /*------------END BOOK PAGE----------*/
 
@@ -280,6 +282,15 @@ body {
 .hero-img-contact {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/arthurvg/image/upload/v1640113431/mahmoud-fawzy-sGPMqwj3N5M-unsplash_r9guqr.jpg");
   }
+.contact-btn {
+    background-color: #0a7557;
+    color:#ffffff;
+    margin-top: 2vw;
+}
+.contact-btn:hover {
+    color: #0a7557;
+    background-color:#ffffff;
+}
 /*------------END CONTACT PAGE----------*/
 
 /*------------mobile responsivity----------*/

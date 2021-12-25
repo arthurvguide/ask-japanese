@@ -1,4 +1,6 @@
+// Script for the BOOK functionality
 
+// Implement datetimepicker 
 $('input:eq(3)').datetimepicker({
     timepicker: true,
     datepicker: true,
@@ -9,5 +11,6 @@ $('input:eq(3)').datetimepicker({
     minDate:new Date(),
     minTime:'11:00',
     maxTime:'21:45',
-})
+});
+
 
