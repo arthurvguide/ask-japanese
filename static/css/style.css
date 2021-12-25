@@ -278,6 +278,18 @@ body {
 }
 /*------------END SUCCESS BOOK PAGE----------*/
 
+/*------------CANCEL CONFIRM PAGE----------*/
+.btn-yes {
+    background-color: #0a7557;
+    color:#ffffff;
+    width:80px;
+}
+.btn-no {
+    background-color: #cc1a1a;
+    color:#ffffff;
+    width:80px;
+}
+/*------------END CANCEL CONFIRM PAGE----------*/
 /*------------BEGINNING CONTACT PAGE----------*/
 .hero-img-contact {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/arthurvg/image/upload/v1640113431/mahmoud-fawzy-sGPMqwj3N5M-unsplash_r9guqr.jpg");

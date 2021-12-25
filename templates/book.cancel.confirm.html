@@ -13,8 +13,8 @@
 </section>
  <!--/.Hero Section-->
 
- <!--Book Section-->
-<section class="booking-section">
+ <!--Confirm Cancel Section-->
+<section>
   <div class="row">
     <div class="col">
       <h2 class="booking-h2 text-center mt-5">Are you sure you want to cancel?</h2>
@@ -26,13 +26,13 @@
       <form class="booking-form mb-5" method="post">
         {% csrf_token %}
         {{ find_booking }}
-        <button class="btn btn-booking" type="submit">Yes</button>
-        <a class="btn btn-booking" href="{% url 'cancel' %}">No</a> 
+        <button class="btn btn-yes" type="submit">Yes</button>
+        <a class="btn btn-no ml-2" href="{% url 'cancel' %}">No</a> 
       </form>   
     </div> 
   </div>
 </section>
- <!--/.Book Section-->
+ <!--/.Confirm Cancel Section-->
     
 
 {%endblock%}
