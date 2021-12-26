@@ -4,7 +4,7 @@
  Ask Japanese is a restaurant website created to promote the restaurant and make table reservations online.
 
  
- [Click here](#) to visit the deployed site.
+ [Click here](https://ask-japanese.herokuapp.com/) to visit the deployed site.
 
 ---
 
