@@ -176,7 +176,10 @@ A few lines of JQuery for datetimepicker.
 [Back to Table of contents](#table-of-contents)
 
 ## Validation
- 
+ - Python files are clear of any errors, validated by PEP8 
+ - HTML and CSS was validated, clear of any errors
+
+ - [Click here]().
 
 ## Testing
  
@@ -216,11 +219,18 @@ This application has been deployed from Github using Heroku. Here's how:
 
 Any question about how to set up your ide is here. Credits to Code Institute:
 
-- [Click here](). 
+- [Click here](https://github.com/arthurvguide/ask-japanese/blob/main/docs/django-cheat/Django%20Blog%20Cheat%20Sheet%20v1.pdf). 
 
  [Back to Table of contents](#table-of-contents)
 
 ## Credits
 
+#### Content
+ * All content was written by me.
 
- [Back to Table of contents](#table-of-contents)
+#### Media
+ * Website logo was made by me.
+
+ * All images came from [Unsplash](https://unsplash.com/.).
+
+[Back to Table of contents](#table-of-contents)
