@@ -9,10 +9,12 @@
 ---
 
 # Table of contents
-1. [Owner/Admin Stories](#owner/admin-goals)
-2. [User Stories](#user-goals)
+1. [Owner/Admin Stories](#Owner/admin-Stories)
+2. [User Stories](#user-stories)
 3. [Structure](#structure)
 4. [Features](#features)
+    1. [User Features](#user-features)
+    2. [Owner/Admin Features](#Owner/Admin-Features)
 5. [Technologies Used](#technologies-used)
     1. [Languages](#Main-Tech)
     2. [Applications and Platforms](#applications-and-platforms)       
@@ -41,7 +43,7 @@ As an admin I can manage reservations so that are well maintained
 
   
 
-## User Goals
+## User Stories
 
 ### EPIC 1 - Core functionality
 #### Purpose of the website
@@ -122,9 +124,22 @@ As a user I can visit the menu page so that I know the dishes from the restauran
   [Back to Table of contents](#table-of-contents)
 
 ## Features
+#### User Features
+- User can book a table at the restaurant
+- User can cancel the booking
+- User can edit the booking
+- User can view the restaurant menu
+- User can contact the restaurant using a contact form
+- User receives an booking confirmation by email
+
+#### Owner/Admin Features
+- Admin can create tables
+- Admin can delete tables
+- Admin can manage bookings
  
 
 ## Future Features
+- User will be able to place a order online.
 
 
  [Back to Table of contents](#table-of-contents)
