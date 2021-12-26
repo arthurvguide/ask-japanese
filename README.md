@@ -172,6 +172,8 @@ A few lines of JQuery for datetimepicker.
 
 - Lucidchart was used to create the visual data schema of the project.
 
+- CLoudinary - to host all images
+
 
 [Back to Table of contents](#table-of-contents)
 
@@ -179,7 +181,7 @@ A few lines of JQuery for datetimepicker.
  - Python files are clear of any errors, validated by PEP8 
  - HTML and CSS was validated, clear of any errors
 
- - [Click here]().
+ - [Click here](https://github.com/arthurvguide/ask-japanese/tree/main/docs/validations).
 
 ## Testing
  
@@ -232,5 +234,26 @@ Any question about how to set up your ide is here. Credits to Code Institute:
  * Website logo was made by me.
 
  * All images came from [Unsplash](https://unsplash.com/.).
+
+[Back to Table of contents](#table-of-contents)
+
+## Screenshots
+
+### Home Page
+![](https://github.com/arthurvguide/ask-japanese/blob/main/docs/screenshots/home%201.png)
+![](https://github.com/arthurvguide/ask-japanese/blob/main/docs/screenshots/home%202.png)
+![](https://github.com/arthurvguide/ask-japanese/blob/main/docs/screenshots/home%203.png)
+![](https://github.com/arthurvguide/ask-japanese/blob/main/docs/screenshots/home%204.png)
+
+### Menu
+![](https://github.com/arthurvguide/ask-japanese/blob/main/docs/screenshots/Menu%201.png)
+![](https://github.com/arthurvguide/ask-japanese/blob/main/docs/screenshots/Menu%202.png)
+
+### Book
+![](https://github.com/arthurvguide/ask-japanese/blob/main/docs/screenshots/booking%201.png)
+![](https://github.com/arthurvguide/ask-japanese/blob/main/docs/screenshots/booking%202.png)
+
+### Contact 
+![](https://github.com/arthurvguide/ask-japanese/blob/main/docs/screenshots/contact%201.png)
 
 [Back to Table of contents](#table-of-contents)
