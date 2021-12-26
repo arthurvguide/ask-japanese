@@ -12,7 +12,7 @@ class BookingForm(forms.ModelForm):
                   'email')
 
 
-class CancelForm(forms.Form):
+class FindBookingForm(forms.Form):
 
     your_name = forms.CharField(required=True, max_length=50)
     your_booking_id = forms.IntegerField(required=True)

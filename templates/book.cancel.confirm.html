@@ -25,7 +25,6 @@
     <div class="col d-flex justify-content-center">
       <form class="booking-form mb-5" method="post">
         {% csrf_token %}
-        {{ find_booking }}
         <button class="btn btn-yes" type="submit">Yes</button>
         <a class="btn btn-no ml-2" href="{% url 'cancel' %}">No</a> 
       </form>   
