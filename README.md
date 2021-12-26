@@ -4,7 +4,7 @@
  Ask Japanese is a restaurant website created to promote the restaurant and make table reservations online.
 
  
- [Click here](https://ask-japanese.herokuapp.com/) to visit the deployed site.
+ [Click here]() to visit the deployed site.
 
 ---
 
@@ -184,13 +184,39 @@ A few lines of JQuery for datetimepicker.
  [Back to Table of contents](#table-of-contents)
 
 ## Deployment
- ### Heroku
- This application has been deployed from Github using Heroku. Here's how:
- 1. Create an account at [heroku.com](https://.heroku.com/)
- 2. Create a new app, add app name and your region
- 3. Click on create app
- 4. Go to "Settings"
+### Forking the GitHub Repository
+To make a clone, or 'Fork' this repository, follow the steps below.
 
+    1. Access your GitHub account and find the relevant repository.
+    2. Click on 'Fork' on the top right of the page.
+    3. You will find a copy of the repository in your own Github account.
+### Making a Local Clone
+    1. Access your GitHub account and find the relevant repository.
+    2. Click the 'Code' button next to 'Add file'.
+    3. To clone the repository using HTTPS, under clone with HTTPS, copy the link.
+    4. Open Git Bash.
+    5. Access the directory you want the clone to be have.
+    6. In your IDE's terminal type 'git clone' and the paste the URL you copied.
+    7. Press Enter.
+    8. You now have a local clone.
+
+### Heroku
+
+This application has been deployed from Github using Heroku. Here's how:
+
+    1. Create an account at heroku.com
+    2. Create a new app, add app name and your region
+    3. Click on create app
+    4. Go to "Settings"
+    5. Under Config Vars, add your sensitive data (creds.json for example)
+    6. For this project, I set buildpacks to and in that order.
+    7. Go to "Deploy" and at "Deployment method", click on "Connect to Github"
+    8. Enter your repository name and click on it when it shows below
+    9. Choose the branch you want to buid your app from
+
+Any question about how to set up your ide is here. Credits to Code Institute:
+
+- [Click here](). 
 
  [Back to Table of contents](#table-of-contents)
 
