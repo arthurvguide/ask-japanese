@@ -9,7 +9,7 @@
 ---
 
 # Table of contents
-1. [Project Goals](#project-goals)
+1. [Project Goals](#owner-goals)
 2. [User Goals](#user-goals)
 3. [Structure](#structure)
 4. [Features](#features)
@@ -22,7 +22,7 @@
     1. [Heroku](#heroku)
 9. [Credits](#credits)
 
-## Project Goals
+## Owner Goals
  The restaurant owner goals are:
   
 

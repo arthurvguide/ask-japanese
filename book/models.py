@@ -8,7 +8,7 @@ class Table(models.Model):
 
     class Meta:
         ordering = ["-size"]
-    
+
     def __str__(self):
         return str(self.size)
 
@@ -22,7 +22,7 @@ class Booking(models.Model):
         default=0,
         blank=False,
         )
-    
+
     booking_date_end = models.DateTimeField(
         default=0,
         blank=False,
