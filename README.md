@@ -16,8 +16,8 @@
     1. [User Features](#user-features)
     2. [Owner/Admin Features](#Owner/Admin-Features)
 5. [Technologies Used](#technologies-used)
-    1. [Languages](#Main-Tech)
-    2. [Applications and Platforms](#applications-and-platforms)       
+    1. [Main Tech](#Main-Tech)
+    2. [Applications and Platforms](#Applications,-Libraries-and-Platforms)       
 6. [Validation](#validation)
 7. [Testing](#testing)
 8. [Deployment](#deployment)
@@ -149,14 +149,28 @@ As a user I can visit the menu page so that I know the dishes from the restauran
  - [Django](https://www.djangoproject.com/) 
  - [Java Script](https://www.javascript.com/)
  - [Bootstrap](https://getbootstrap.com/)
-### Applications and Platforms
- - [Git](https://git-scm.com/) - Version control system used to commit and push to Github via Gitpod.
- - [Github](https://github.com/) - The projects repository and all its branches were commited, pushed and deployed to Github.
- - [Gitpod](https://gitpod.com/) - All code was written and tested using the Gitpod web-based IDE.
- - [Heroku](https://www.heroku.com) - Used to deploy the application.
- - [Lucidchart](https://lucid.co/product/lucidchart) - Lucidchart was used to create the flowchart of the project.
 
-#### Third Party Libraries
+
+### Applications, Libraries and Platforms
+This project is built solely through the framework Django, and I have tried to make use of its many powerfiul features.
+
+
+A few lines of JQuery for datetimepicker.
+- Font Awesome fonts were used for all icons in this project.
+
+- Google Fonts - Were used for all fonts and icons in this project.
+
+- Git - Version control system used to commit and push to Github via Gitpod.
+
+- Github - The projects repository and all its branches were commited, and pushed to Github.
+
+- Heroku - Used to deploy the application.
+
+- Gitpod - All code was written and tested with the Gitpod web-based IDE.
+
+- Balsamiq Wireframes was used to create wireframe images of the website which you can view here.
+
+- Lucidchart was used to create the visual data schema of the project.
 
 
 [Back to Table of contents](#table-of-contents)
