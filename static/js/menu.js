@@ -16,7 +16,7 @@ const drinksView = document.getElementsByClassName("drinks-view")[0];
 
 // Getting desserts elements
 const desserts = document.getElementsByClassName("desserts")[0];
-const dessertsView = document.getElementsByClassName("desserts-view")[0]
+const dessertsView = document.getElementsByClassName("desserts-view")[0];
 
 // Getting salads elements
 const sides = document.getElementsByClassName("sides")[0];
@@ -29,7 +29,7 @@ once one menu class is selected, all the others will be undisplayed */
 sides.addEventListener("click", () => {
     if (sidesView.classList.contains("d-flex") == false){
         sidesView.classList.add("d-flex");
-    };
+    }
 
     let allViews = [dessertsView, sushiSashimiView, riceNoodlesView, drinksView];
 
@@ -39,13 +39,13 @@ sides.addEventListener("click", () => {
             value.classList.add("d-none");
         } 
       }
-})
+});
 
 // If sushiSashimi is selected
 sushiSashimi.addEventListener("click", () => {
     if (sushiSashimiView.classList.contains("d-flex") == false){
         sushiSashimiView.classList.add("d-flex");
-    };
+    }
 
     let allViews = [dessertsView, sidesView, riceNoodlesView, drinksView];
 
@@ -54,14 +54,14 @@ sushiSashimi.addEventListener("click", () => {
             value.classList.remove("d-flex");
             value.classList.add("d-none");
         } 
-      };
-})
+      }
+});
 
 // If riceNodles is selected
 riceNoodles.addEventListener("click", () => {
     if (riceNoodlesView.classList.contains("d-flex") == false){
         riceNoodlesView.classList.add("d-flex");
-    };
+    }
     
     let allViews = [dessertsView, sidesView, sushiSashimiView, drinksView];
 
@@ -70,14 +70,14 @@ riceNoodles.addEventListener("click", () => {
             value.classList.remove("d-flex");
             value.classList.add("d-none");
         } 
-      };
+      }
 });
 
 // If drinks is selected
 drinks.addEventListener("click", () => {
     if (drinksView.classList.contains("d-flex") == false){
         drinksView.classList.add("d-flex");
-    };
+    }
     
     let allViews = [dessertsView, sidesView, sushiSashimiView, riceNoodlesView];
 
@@ -86,14 +86,14 @@ drinks.addEventListener("click", () => {
             value.classList.remove("d-flex");
             value.classList.add("d-none");
         }
-      };
+      }
 });
 
 // If desserts is selected
 desserts.addEventListener("click", () => {
     if (dessertsView.classList.contains("d-flex") == false){
         dessertsView.classList.add("d-flex");
-    };
+    }
     
     let allViews = [sidesView, sushiSashimiView, drinksView, riceNoodlesView];
 
@@ -102,7 +102,7 @@ desserts.addEventListener("click", () => {
             value.classList.remove("d-flex");
             value.classList.add("d-none");
         }
-      };
+      }
 });
 
 
