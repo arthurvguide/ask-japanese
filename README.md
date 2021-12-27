@@ -7,7 +7,8 @@
  [Click here](https://ask-japanese.herokuapp.com/) to visit the deployed site.
 
 To access admin
-- User: Admin Password: askjapanese123
+- User: Admin 
+- Password: askjapanese123
 
 ---
 
@@ -24,7 +25,6 @@ To access admin
 6. [Validation](#validation)
 7. [Testing](#testing)
 8. [Deployment](#deployment)
-    1. [Heroku](#heroku)
 9. [Credits](#credits)
 
 ## Owner/admin Stories
@@ -119,10 +119,11 @@ As a user I can visit the menu page so that I know the dishes from the restauran
 
 ## Structure
  ### Wireframes
+- [Check the wireframes used to this project](https://github.com/arthurvguide/ask-japanese/blob/main/docs/wireframes/Wireframes.pdf). 
 
- ### Flowchart
+ ### Diagrams
  
- 
+ - [Check the diagrams used to this project](https://github.com/arthurvguide/ask-japanese/tree/main/docs/diagrams). 
 
   [Back to Table of contents](#table-of-contents)
 
@@ -185,6 +186,7 @@ This project is built solely through the framework Django, and I have tried to m
 ## Validation
  - Python files are clear of any errors, validated by PEP8 
  - HTML and CSS was validated, clear of any errors
+ - JavaScript files was validated by JSHINT, no errors found
 
  - [Click here](https://github.com/arthurvguide/ask-japanese/tree/main/docs/validations).
 
