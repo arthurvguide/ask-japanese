@@ -102,6 +102,13 @@ As a user I can cancel a booking so that I don't need to get in touch with the r
 - Acceptance Criteria 1: User can find their booking on the booking page
 - Acceptance Criteria 2: User can cancel their booking
 - Acceptance Criteria 3: User receives a canceling email confirmation
+
+#### Edit a booking
+As a user I can edit my booking so that I postpone or add more people to my booking
+
+- Acceptance Criteria 1: User can find their booking on the booking page
+- Acceptance Criteria 2: User can edit their booking
+- Acceptance Criteria 3: User receives a new email booking confirmation
 #### Automatic email confirmation
 As a user I can receive an automatic email so that I will be able to review later on
 
