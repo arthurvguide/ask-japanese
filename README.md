@@ -411,6 +411,8 @@ This project is built solely through the framework Django, and I have tried to m
 
  [Back to Table of contents](#table-of-contents)
 
+- The Responsive Design was tested using Chrome Dev Tool. It looks responsive on mobile, tablets and on large screen devices.
+
 ## Deployment
 ### Forking the GitHub Repository
 To make a clone, or 'Fork' this repository, follow the steps below.
