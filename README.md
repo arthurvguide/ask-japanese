@@ -1,10 +1,13 @@
-# [Ask Japanese](#)
-
+# [Ask Japanese](https://ask-japanese.herokuapp.com/)
+![](https://github.com/arthurvguide/ask-japanese/blob/main/docs/screenshots/home-10.JPG)
 
  Ask Japanese is a restaurant website created to promote the restaurant and make table reservations online.
 
  
- [Click here]() to visit the deployed site.
+ [Click here](https://ask-japanese.herokuapp.com/) to visit the deployed site.
+
+To access admin
+- User: Admin Password: askjapanese123
 
 ---
 
@@ -136,6 +139,7 @@ As a user I can visit the menu page so that I know the dishes from the restauran
 - Admin can create tables
 - Admin can delete tables
 - Admin can manage bookings
+- Admin receives the contact form by email
  
 
 ## Future Features
@@ -155,7 +159,8 @@ As a user I can visit the menu page so that I know the dishes from the restauran
 This project is built solely through the framework Django, and I have tried to make use of its many powerfiul features.
 
 
-A few lines of JQuery for datetimepicker.
+- JQuery for datetimepicker.
+
 - Font Awesome fonts were used for all icons in this project.
 
 - Google Fonts - Were used for all fonts and icons in this project.
@@ -172,7 +177,7 @@ A few lines of JQuery for datetimepicker.
 
 - Lucidchart was used to create the visual data schema of the project.
 
-- CLoudinary - to host all images
+- CLoudinary - to host all images used.
 
 
 [Back to Table of contents](#table-of-contents)
@@ -240,20 +245,19 @@ Any question about how to set up your ide is here. Credits to Code Institute:
 ## Screenshots
 
 ### Home Page
+![](https://github.com/arthurvguide/ask-japanese/blob/main/docs/screenshots/home-10.JPG)
 ![](https://github.com/arthurvguide/ask-japanese/blob/main/docs/screenshots/home%201.png)
 ![](https://github.com/arthurvguide/ask-japanese/blob/main/docs/screenshots/home%202.png)
-![](https://github.com/arthurvguide/ask-japanese/blob/main/docs/screenshots/home%203.png)
-![](https://github.com/arthurvguide/ask-japanese/blob/main/docs/screenshots/home%204.png)
 
 ### Menu
 ![](https://github.com/arthurvguide/ask-japanese/blob/main/docs/screenshots/Menu%201.png)
-![](https://github.com/arthurvguide/ask-japanese/blob/main/docs/screenshots/Menu%202.png)
 
 ### Book
 ![](https://github.com/arthurvguide/ask-japanese/blob/main/docs/screenshots/booking%201.png)
-![](https://github.com/arthurvguide/ask-japanese/blob/main/docs/screenshots/booking%202.png)
+![](https://github.com/arthurvguide/ask-japanese/blob/main/docs/screenshots/booking.cancel.png)
+![](https://github.com/arthurvguide/ask-japanese/blob/main/docs/screenshots/edit.JPG)
 
 ### Contact 
-![](https://github.com/arthurvguide/ask-japanese/blob/main/docs/screenshots/contact%201.png)
+![](https://github.com/arthurvguide/ask-japanese/blob/main/docs/screenshots/contact%202.png)
 
 [Back to Table of contents](#table-of-contents)
