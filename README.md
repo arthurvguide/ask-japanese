@@ -199,6 +199,215 @@ This project is built solely through the framework Django, and I have tried to m
 
 ## Testing
  
+ ### Test user book a table 
+  **"I would like to book a table at the restaurant"**
+
+<details>
+    <summary>View image of the  initial steps of the booking</summary>
+
+![Initial](https://github.com/arthurvguide/ask-japanese/blob/main/docs/testing/testing-1/Initial.JPG)
+
+</details>
+
+- **Actions**:
+    * *User enters Full Name*
+    * *User enters Group Size*
+    * *User enters booking date*
+    * *User enters contact number*
+    * *User enters email*
+    * *User submit all input and confirm booking*
+
+<details>
+    <summary>View image of the midle steps</summary>
+
+![Midle](https://github.com/arthurvguide/ask-japanese/blob/main/docs/testing/testing-1/mid.JPG)
+
+</details>
+
+- **Actions**:
+    * *User has a booking confirmation*
+    * *User recevies a email with the booking confirmation*
+
+<details>
+    <summary>View image of the final steps</summary>
+
+![Final](https://github.com/arthurvguide/ask-japanese/blob/main/docs/testing/testing-1/final.JPG)
+
+</details>
+
+<details>
+    <summary>View image of the email confirmation</summary>
+
+![email](https://github.com/arthurvguide/ask-japanese/blob/main/docs/testing/testing-1/email.JPG)
+
+</details>
+
+ - Expected result: *To create a successful booking*
+
+ - Actual result: *Works as intended*
+
+ [Back to Table of contents](#table-of-contents)
+
+### Test user cancel a book
+  **"I would like to cancel my booking**
+
+<details>
+    <summary>View image of the  initial steps to cancel the booking</summary>
+
+![Initial](https://github.com/arthurvguide/ask-japanese/blob/main/docs/testing/testing-2/initial.JPG)
+
+</details>
+
+- **Actions**:
+    * *User enters Full Name*
+    * *User enters booking reference ID*
+    * *User confirm if he wants to cancel*
+<details>
+    <summary>View image of the final steps</summary>
+
+![Final](https://github.com/arthurvguide/ask-japanese/blob/main/docs/testing/testing-2/final.JPG)
+
+</details>
+
+ - Expected result: *To cancel a booking*
+
+ - Actual result: *Works as intended*
+
+ [Back to Table of contents](#table-of-contents)
+ 
+### Test user edit a booking
+  **"I would like to edit my booking"**
+
+<details>
+    <summary>View image of the initial steps to edit the booking</summary>
+
+![Initial](https://github.com/arthurvguide/ask-japanese/blob/main/docs/testing/testing-3/initial.JPG)
+
+</details>
+
+- **Actions**:
+    * *User enters Full Name*
+    * *User enters Booking Reference ID*
+
+<details>
+    <summary>View image of the  midle steps</summary>
+
+![Midle](https://github.com/arthurvguide/ask-japanese/blob/main/docs/testing/testing-3/mid.JPG)
+
+- **Actions**:
+    * *User edit yours informations*
+</details>
+
+- **Actions**:
+    * *User has a booking confirmation (keeps the same booking id)*
+    * *User recevies a email with the booking confirmation*
+
+<details>
+    <summary>View image of the final steps</summary>
+
+![Final](https://github.com/arthurvguide/ask-japanese/blob/main/docs/testing/testing-3/final.JPG)
+
+</details>
+
+ - Expected result: *To edit an existing booking*
+
+ - Actual result: *Works as intended*
+
+ [Back to Table of contents](#table-of-contents)
+
+### Test user contact the restaurant
+  **"I would like to contact the restaurant"**
+
+<details>
+    <summary>View image of the initial steps</summary>
+
+![Initial](https://github.com/arthurvguide/ask-japanese/blob/main/docs/testing/testing-4/initial.JPG)
+
+</details>
+
+- **Actions**:
+    * *User enters Full Name*
+    * *User enters email*
+    * *User enters subject*
+    * *User enters message*
+    * *User sends message*
+    * *Message is sent*
+
+<details>
+    <summary>View image of the final steps</summary>
+
+![Final](https://github.com/arthurvguide/ask-japanese/blob/main/docs/testing/testing-4/final.JPG)
+
+</details>
+
+<details>
+    <summary>View image of the email confirmation</summary>
+
+![email](https://github.com/arthurvguide/ask-japanese/blob/main/docs/testing/testing-4/email-confirmation.JPG)
+
+</details>
+
+
+ - Expected result: *To contact the restaurant*
+
+ - Actual result: *Works as intended*
+
+ [Back to Table of contents](#table-of-contents)
+
+### Test user double booking
+  **"I would like to have two bookings at the same time"**
+
+- **Actions**:
+    * *User input booking details*
+    * *booking is not accepted, as it's not allowed two bookings at the same datetime*
+<details>
+    <summary>View result</summary>
+
+![result](https://github.com/arthurvguide/ask-japanese/blob/main/docs/testing/testing-6/result.JPG)
+
+</details>
+
+ - Expected result: *Not be allowed - avoid double booking*
+
+ - Actual result: *Works as intended*
+
+### Test user book at a busy time
+  **"I would like to have a booking at a busy time"**
+
+- **Actions**:
+    * *User input booking details*
+    * *booking is not accepted, as there's no table available at that time*
+<details>
+    <summary>View result</summary>
+
+![result](https://github.com/arthurvguide/ask-japanese/blob/main/docs/testing/testing-7/result.JPG)
+
+</details>
+
+ - Expected result: *Not be allowed - no tables available*
+
+ - Actual result: *Works as intended*
+
+### Test user see the menu
+  **"I would like to see the restaurant menu"**
+
+- **Actions**:
+    * *User filter what he wants to see on menu*
+
+<details>
+    <summary>View image of the steps </summary>
+
+![sushi-sashimi](https://github.com/arthurvguide/ask-japanese/blob/main/docs/testing/testing-5/initial.JPG)
+![rice-nodles](https://github.com/arthurvguide/ask-japanese/blob/main/docs/testing/testing-5/mid-1.JPG)
+![sides](https://github.com/arthurvguide/ask-japanese/blob/main/docs/testing/testing-5/mid-2.JPG)
+![drinks](https://github.com/arthurvguide/ask-japanese/blob/main/docs/testing/testing-5/mid-3.JPG)
+![desserts](https://github.com/arthurvguide/ask-japanese/blob/main/docs/testing/testing-5/mid-4.JPG)
+
+</details>
+
+ - Expected result: *To view the restaurant menu*
+
+ - Actual result: *Works as intended*
 
  [Back to Table of contents](#table-of-contents)
 

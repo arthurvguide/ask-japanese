@@ -42,14 +42,14 @@ class BookingView(View):
             #  at the required time
             if table == "No Table available":
                 messages.warning(request, 'Sorry, there is no table'
-                                          'available at this time,'
+                                          ' available at this time,'
                                           ' please try another date')
                 return render(request, 'book.html', {'form': booking_form})
 
             # Explaining for user that they cant double book
             if booking.phone_number in numbers_booked:
                 messages.warning(request, 'You already has'
-                                          'a booking at this time')
+                                          ' a booking at this time')
                 return render(request, 'book.html', {'form': booking_form})
 
             # Passing booking end date to the Booking Model
@@ -206,14 +206,14 @@ def EditDetailsView(request, id):
             # available at the required time
             if table == "No Table available":
                 messages.warning(request, 'Sorry, there is no table'
-                                          'available at this time,'
+                                          ' available at this time,'
                                           ' please try another date')
                 return render(request, 'book.html', {'form': booking_form})
 
             # Explaining for user that they cant double book
             if booking.phone_number in numbers_booked:
                 messages.warning(request, 'You already has'
-                                          'a booking at this time')
+                                          ' a booking at this time')
                 return render(request, 'book.html', {'form': booking_form})
 
             # Passing booking end date to the Booking Model
