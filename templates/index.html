@@ -25,7 +25,7 @@
           <p class="d-none d-md-block">We are always in the mood for Japanese food</p>
           <div class="row justify-content-center">
               <div class="col">
-                <button type="button" class="btn hero-btn">Book your visit</button>
+                <a href="{% url 'book' %}" type="button" class="btn hero-btn">Book your visit</a>
               </div>
           </div>
         </div>
@@ -40,7 +40,7 @@
           <h3 class="h3">Here we have all you wish from Japanese cuisine</h3>
           <div class="row justify-content-center">
               <div class="col">
-                <button type="button" class="btn hero-btn">Check our menu</button>
+                <a href="{% url 'menu' %}" type="button" class="btn hero-btn">Check our menu</a>
               </div>
           </div> 
         </div>
@@ -80,7 +80,7 @@
           <div class="card-img-overlay">
             <h4 class="card-title">Sushi Rolls</h4>
             <p class="card-text">Sushi is made of small pieces of raw fish that are wrapped in rice and seaweed.</p>
-            <a href="#" class="btn btn-explore-menu">View Menu</a>
+            <a href="{% url 'menu' %}" class="btn btn-explore-menu">View Menu</a>
           </div>
         </div>
       </div>
@@ -91,7 +91,7 @@
           <div class="card-img-overlay">
             <h4 class="card-title">Yakisoba</h4>
             <p class="card-text">Fresh yakisoba noodles stir-fried in a tangy sauce served with crunchy vegetables</p>
-            <a href="#" class="btn btn-explore-menu">View Menu</a>
+            <a href="{% url 'menu' %}" class="btn btn-explore-menu">View Menu</a>
           </div>
         </div>
       </div>
@@ -102,7 +102,7 @@
           <div class="card-img-overlay">
             <h4 class="card-title">Salads & Street Food</h4>
             <p class="card-text">We have an extensive range of traditional Japanese street food and salads</p>
-            <a href="#" class="btn btn-explore-menu">View Menu</a>
+            <a href="{% url 'menu' %}" class="btn btn-explore-menu">View Menu</a>
           </div>
         </div>
       </div>
@@ -141,7 +141,7 @@
         <li>205</li>
         <li>GL51 1DS</li>
         <li>01242 999 999</li>
-        <li><button type="button" class="btn address-btn">Contact Us</button></li>
+        <li><a href="{% url 'contact' %}" class="btn address-btn">Contact Us</a></li>
         </ul>
       </div>
       <!--Working Ours-->
