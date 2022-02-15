@@ -27,6 +27,13 @@ To access admin
 8. [Deployment](#deployment)
 9. [Credits](#credits)
 
+## Agile Workflow
+
+![](https://github.com/arthurvguide/ask-japanese/blob/main/docs/screenshots/kanban-board.JPG)
+I've tried to implement the basic Agile strategy, creating issues for my user stories, a Kanban board for the project, Milestones for each epic and moving the stories from TO DO to, PROGRESS to DONE.
+
+As Github is limited with ways to do this, I have chosen to have the Milestones as Epics instead of sprints in this project.
+The Kanban board can be viewed [here](https://github.com/arthurvguide/ask-japanese/projects/1).
 ## Owner/admin Stories
 
 ### EPIC 5 - Admin/Site-Owner Functionality
