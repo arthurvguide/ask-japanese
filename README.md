@@ -6,7 +6,7 @@
  
  [Click here](https://ask-japanese.herokuapp.com/) to visit the deployed site.
 
-To access admin
+To access admin, click [here](https://ask-japanese.herokuapp.com/admin/login/?next=/admin/)
 - User: Admin 
 - Password: askjapanese123
 
