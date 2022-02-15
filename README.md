@@ -13,19 +13,20 @@ To access admin, click [here](https://ask-japanese.herokuapp.com/admin/login/?ne
 ---
 
 # Table of contents
-1. [Owner/Admin Stories](#Owner/admin-Stories)
-2. [User Stories](#user-stories)
-3. [Structure](#structure)
-4. [Features](#features)
+1. [Agile Workflow](#Agile-Workflow)
+2. [Owner/Admin Stories](#Owner/admin-Stories)
+3. [User Stories](#user-stories)
+4. [Structure](#structure)
+5. [Features](#features)
     1. [User Features](#user-features)
     2. [Owner/Admin Features](#Owner/Admin-Features)
-5. [Technologies Used](#technologies-used)
+6. [Technologies Used](#technologies-used)
     1. [Main Tech](#Main-Tech)
     2. [Applications and Platforms](#Applications,-Libraries-and-Platforms)       
-6. [Validation](#validation)
-7. [Testing](#testing)
-8. [Deployment](#deployment)
-9. [Credits](#credits)
+7. [Validation](#validation)
+8. [Testing](#testing)
+9. [Deployment](#deployment)
+10. [Credits](#credits)
 
 ## Agile Workflow
 
@@ -34,6 +35,8 @@ I've tried to implement the basic Agile strategy, creating issues for my user st
 
 As Github is limited with ways to do this, I have chosen to have the Milestones as Epics instead of sprints in this project.
 The Kanban board can be viewed [here](https://github.com/arthurvguide/ask-japanese/projects/1).
+
+[Back to Table of contents](#table-of-contents)
 ## Owner/admin Stories
 
 ### EPIC 5 - Admin/Site-Owner Functionality
@@ -51,7 +54,7 @@ As an admin I can manage reservations so that are well maintained
 - Acceptance Criteria 2: The admin can edit a reservation
 - Acceptance Criteria 3: The admin can create and delete reservations
 
-  
+[Back to Table of contents](#table-of-contents)  
 
 ## User Stories
 
