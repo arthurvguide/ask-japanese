@@ -1,4 +1,5 @@
 {% extends "base.html" %} 
+{% load static %}
 
 {% block content %}
 <!--Hero Section-->
@@ -16,7 +17,7 @@
       <!--First Slide-->
       <div class="carousel-item active first-slide">
         <div class="view">
-          <img class="d-block w-100" src="https://res.cloudinary.com/arthurvg/image/upload/v1638584754/jakub-dziubak-iOHJKJqO6E0-unsplash_vxmtc8.jpg"
+          <img class="first-slide-img d-block w-100" src="https://res.cloudinary.com/arthurvg/image/upload/v1638584754/jakub-dziubak-iOHJKJqO6E0-unsplash_vxmtc8.jpg"
             alt="First slide hero">
         </div>
         <div class="carousel-caption">
@@ -33,7 +34,7 @@
       <!--Second Slide-->
       <div class="carousel-item second-slide">
         <div class="view">
-          <img class="d-block w-100" src="https://res.cloudinary.com/arthurvg/image/upload/v1638584754/jakub-dziubak-iOHJKJqO6E0-unsplash_vxmtc8.jpg"
+          <img class="second-slide-img d-block w-100" src="https://res.cloudinary.com/arthurvg/image/upload/v1638584754/jakub-dziubak-iOHJKJqO6E0-unsplash_vxmtc8.jpg"
             alt="Second slide hero">
         </div>
         <div class="carousel-caption">
@@ -186,3 +187,9 @@
 <!--/.Details Section-->
 
 {%endblock%}
+
+{% block scripts %}
+
+<script src="{% static 'js/index.js' %}"></script>
+
+{% endblock %}
