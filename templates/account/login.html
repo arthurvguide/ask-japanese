@@ -13,11 +13,14 @@
 
 {% block content %}
 
-<container class="text-center justify-content-center m-5 login">
-  <div class="row m-5">
+<container class="text-center justify-content-center m-5 login-container">
+  <div class="row mt-5 mb-2">
     <div class="col">
       <h1>{% trans "Welcome back" %}</h1>
     </div>
+  </div>
+  <div class="row justify-content-center">
+    <p> log in for bookings</p>
   </div>
   <div class="row">
     <div class="col">
@@ -32,13 +35,6 @@
     </div>
   </div>
   <div class="row">
-    <div class="col">
-      <div class="col">
-        <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgotten Password?" %}</a>
-      </div>
-    </div>
-  </div>
-  <div class="row">
     <div class="col m-2">
       <p>{% blocktrans %}Don't have a Ask Japanese account?
         <a href="{{ signup_url }}">Register</a>{% endblocktrans %}</p>
@@ -46,4 +42,8 @@
   </div>
 </container>
 
+{% endblock %}
+
+{% block scripts %}
+  <script src="{% static 'js/accounts/login.js' %}"></script>
 {% endblock %}

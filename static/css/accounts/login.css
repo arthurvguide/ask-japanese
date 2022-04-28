@@ -1,3 +1,12 @@
-.login {
-    background-color: blueviolet;
+.login-container h1 {
+    font-size: 60px;
+}
+.primaryAction {
+    color:#ffffff;
+    background-color: #0062cc;
+}
+
+.primaryAction:hover {
+    background-color: #111111;
+    color:#ffffff;
 }
