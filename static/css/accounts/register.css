@@ -1,0 +1,13 @@
+.register-container h1 {
+    font-size: 60px;
+}
+
+.btn {
+    color:#ffffff;
+    background-color: #0062cc;
+}
+
+.btn:hover {
+    background-color: #111111;
+    color:#ffffff;
+}

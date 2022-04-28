@@ -1,21 +1,42 @@
-{% extends "account/base.html" %}
+{% extends "base.html" %}
+{% load static %}
 
 {% load i18n %}
 
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
-{% block content %}
-<h1>{% trans "Sign Up" %}</h1>
-
-<p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
-
-<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
-  {% csrf_token %}
-  {{ form.as_p }}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-  {% endif %}
-  <button type="submit">{% trans "Sign Up" %} &raquo;</button>
-</form>
-
+{% block links  %}
+<link rel="stylesheet" href="{% static 'css/accounts/register.css' %}">
 {% endblock %}
+
+{% block content %}
+<container class="text-center justify-content-center m-5 register-container">
+<div class="row justify-content-center mt-5">
+  <h1>{% trans "Register now" %}</h1>
+</div>
+<div class="row justify-content-center">
+  <p>Register for bookings</p>
+</div>
+<div class="row justify-content-center">
+  <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    {% if redirect_field_value %}
+    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+    {% endif %}
+    <button type="submit">{% trans "Sign Up" %} &raquo;</button>
+  </form>
+</div>
+<div class="row justify-content-center mt-2">
+  <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+</div>
+
+
+</container>
+{% endblock %}
+
+{% block scripts %}
+  <script src="{% static 'js/accounts/register.js' %}"></script>
+{% endblock %}
+
+
