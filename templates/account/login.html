@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% load i18n %}
+{% load account socialaccount %}
+
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
+
+{% block links  %}
+<link rel="stylesheet" href="{% static 'css/accounts/login.css' %}">
+{% endblock %}
+
+
+{% block content %}
+
+<container class="text-center justify-content-center m-5 login">
+  <div class="row m-5">
+    <div class="col">
+      <h1>{% trans "Welcome back" %}</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <form class="login" method="POST" action="{% url 'account_login' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        {% if redirect_field_value %}
+        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+        {% endif %}
+        <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
+      </form>   
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="col">
+        <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgotten Password?" %}</a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col m-2">
+      <p>{% blocktrans %}Don't have a Ask Japanese account?
+        <a href="{{ signup_url }}">Register</a>{% endblocktrans %}</p>
+    </div>
+  </div>
+</container>
+
+{% endblock %}

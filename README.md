@@ -13,16 +13,16 @@ To access admin, click [here](https://ask-japanese.herokuapp.com/admin/login/?ne
 ---
 
 # Table of contents
-1. [Agile Workflow](#Agile-Workflow)
-2. [Owner/Admin Stories](#Owner/admin-Stories)
+1. [Agile Workflow](#agile-workflow)
+2. [Owner/Admin Stories](#owner/admin-stories)
 3. [User Stories](#user-stories)
 4. [Structure](#structure)
 5. [Features](#features)
     1. [User Features](#user-features)
-    2. [Owner/Admin Features](#Owner/Admin-Features)
+    2. [Owner/Admin Features](#owner/admin-features)
 6. [Technologies Used](#technologies-used)
     1. [Main Tech](#Main-Tech)
-    2. [Applications and Platforms](#Applications,-Libraries-and-Platforms)       
+    2. [Applications and Platforms](#applications,-libraries-and-platforms)       
 7. [Validation](#validation)
 8. [Testing](#testing)
 9. [Deployment](#deployment)
@@ -37,6 +37,7 @@ As Github is limited with ways to do this, I have chosen to have the Milestones 
 The Kanban board can be viewed [here](https://github.com/arthurvguide/ask-japanese/projects/1).
 
 [Back to Table of contents](#table-of-contents)
+
 ## Owner/admin Stories
 
 ### EPIC 5 - Admin/Site-Owner Functionality
