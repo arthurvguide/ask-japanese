@@ -49,16 +49,28 @@
           src="https://res.cloudinary.com/arthurvg/image/upload/v1638546455/ASK_JAPANESE_12_ha8zyi.png"
           alt="Ask Japanese Logo"></a>
       <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        {% if user.is_authenticated %}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Bookings
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="{% url 'book' %}">Book a table</a>
-            <a class="dropdown-item" href="{% url 'cancel' %}">Cancel</a>
-            <a class="dropdown-item" href="{% url 'edit' %}">Edit</a>
-          </div>
-        </li>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="{% url 'book' %}">Book a table</a>
+              <a class="dropdown-item" href="{% url 'cancel' %}">Cancel</a>
+              <a class="dropdown-item" href="{% url 'edit' %}">Edit</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'account_logout' %}">Log out</a>
+          </li>
+          {% else %}
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'account_login' %}">Log in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'account_signup' %}">Register</a>
+          </li>
+          {% endif %}
       </ul>
     </div>
   </nav>
