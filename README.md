@@ -430,6 +430,23 @@ This project is built solely through the framework Django, and I have tried to m
 
 - The Responsive Design was tested using Chrome Dev Tool. It looks responsive on mobile, tablets and on large screen devices.
 
+### Test Authentication
+**"I would like to create an account so then I can book a visit"**
+
+- **Actions**:
+    * *User put in required details to create an account*
+<details>
+    <summary>View image of the steps</summary>
+
+![initial](https://github.com/arthurvguide/ask-japanese/blob/main/docs/testing/testing-8/allauth-test-1.PNG)
+![final](https://github.com/arthurvguide/ask-japanese/blob/main/docs/testing/testing-8/allauth-test-2.PNG)
+
+</details>
+
+ - Expected result: *To be able to access the booking pages*
+
+ - Actual result: *Works as intended*
+
 ## Deployment
 ### Forking the GitHub Repository
 To make a clone, or 'Fork' this repository, follow the steps below.
