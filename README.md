@@ -135,6 +135,12 @@ As a user I can visit the menu page so that I know the dishes from the restauran
 
  [Back to Table of contents](#table-of-contents)
 
+### EPIC 7 - User Authentication
+#### Manage Account 
+As a user I can I can manage my account so that I can utilise the full functionality of the website
+
+-Acceptance Criteria 1: User can log in, log out and register through the navbar
+
 ## Structure
  ### Wireframes
 - [Check the wireframes used to this project](https://github.com/arthurvguide/ask-japanese/blob/main/docs/wireframes/Wireframes.pdf). 
