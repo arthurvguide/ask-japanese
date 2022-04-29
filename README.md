@@ -463,6 +463,7 @@ To make a clone, or 'Fork' this repository, follow the steps below.
     6. In your IDE's terminal type 'git clone' and the paste the URL you copied.
     7. Press Enter.
     8. You now have a local clone.
+    9. All information needed to set your environment is found at the bottom of this topic.
 
 ### Heroku
 
@@ -473,10 +474,11 @@ This application has been deployed from Github using Heroku. Here's how:
     3. Click on create app
     4. Go to "Settings"
     5. Under Config Vars, add your sensitive data (creds.json for example)
-    6. For this project, I set buildpacks to and in that order.
-    7. Go to "Deploy" and at "Deployment method", click on "Connect to Github"
-    8. Enter your repository name and click on it when it shows below
-    9. Choose the branch you want to buid your app from
+    6. Now go to your IDE and connect your enviroment with heroku
+    7. heroku login -i
+    8. Then run the following command: heroku git:remote -a your_app_name_here
+    9. Finally: git push heroku main
+
 
 Any question about how to set up your ide is here. Credits to Code Institute:
 
