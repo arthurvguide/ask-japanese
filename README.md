@@ -1,10 +1,10 @@
-# [Ask Japanese](https://ask-japanese.herokuapp.com/)
+# [Ask Japanese](https://askjapanese.onrender.com/)
 ![](https://github.com/arthurvguide/ask-japanese/blob/main/docs/screenshots/home-10.JPG)
 
  Ask Japanese is a restaurant website created to promote the restaurant and make table reservations online.
 
  
- [Click here](https://ask-japanese.herokuapp.com/) to visit the deployed site.
+ [Click here](https://askjapanese.onrender.com/) to visit the deployed site.
 
 To access admin, click [here](https://ask-japanese.herokuapp.com/admin/login/?next=/admin/)
 - User: Admin 
